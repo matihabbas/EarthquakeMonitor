@@ -1,0 +1,106 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.matih.earthquakemonitor.fragments.DetailFragment"
+    android:fillViewport="true"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="5.9"
+                android:id="@+id/textView_fragment_detail_magnitude"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:background="@drawable/rounded_corner_rectangle"
+                android:layout_margin="8dp"
+                android:textSize="48sp"
+                android:textColor="#ffffff"
+                android:minHeight="80dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12/08/2015"
+                    android:id="@+id/textView_fragment_detail_date"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18:42"
+                    android:id="@+id/textView_fragment_detail_time"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_location"
+                android:id="@+id/textView_fragment_detail_location"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="California"
+                android:id="@+id/textView_fragment_detail_location_value"
+                android:layout_toRightOf="@+id/textView_fragment_detail_location"
+                android:layout_marginLeft="8dp"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_depth"
+                android:id="@+id/textView_fragment_detail_depth"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_below="@+id/textView_fragment_detail_location_value" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="4.5"
+                android:id="@+id/textView_fragment_detail_depth_value"
+                android:layout_alignLeft="@+id/textView_fragment_detail_location_value"
+                android:layout_below="@+id/textView_fragment_detail_location_value"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Earthquake Monitor</string>
+    <string name="action_map">Map</string>
+    <string name="action_summary">Summary</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="title_activity_detail">Earthquake Details</string>
+    <string name="detail_location">Location:</string>
+    <string name="detail_depth">Depth: </string>
+    <string name="detail_magnitude">Magnitude: </string>
+    <string name="title_activity_summary_map">Summary Map</string>
+</resources>

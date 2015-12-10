@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="string" name="usgs_hour_url" format="string">http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson</item>
+    <item type="string" name="cache_filename" format="string">jsonCache</item>
+    <item type="integer" name="conn_timeout_ms" format="integer">7000</item>
+</resources>

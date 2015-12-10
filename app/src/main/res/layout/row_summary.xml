@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00ffffff">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1.0"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#bdbdbd"
+        android:id="@+id/linearLayout_row_summary_bg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Name of place"
+                android:id="@+id/textView_row_summary_place"
+                android:textSize="18sp"
+                android:lines="1"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Magnitude"
+                android:id="@+id/textView_row_summary_magnitude"
+                android:textSize="16sp"
+                android:gravity="center_horizontal"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.8"
+            android:src="@drawable/row_summary_select_indicator"
+            android:scaleType="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></LinearLayout>
+
+</RelativeLayout>

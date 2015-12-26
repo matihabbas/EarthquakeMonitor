@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".activities.SummaryActivity">
     <item
-        android:id="@+id/action_map"
+        android:id="@+id/action_map_switch"
         android:orderInCategory="100"
         android:title="@string/action_map"
         android:icon="@drawable/summary_map"
